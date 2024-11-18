@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.hypermode.com/modus.json",
+  "endpoints": {
+    "default": {
+      "type": "graphql",
+      "path": "/graphql",
+      "auth": "bearer-token"
+    }
+  },
+  "connections": {
+     "my-api": {
+       "type": "http",
+       "baseUrl": "https://api.example.com/",
+       "headers": {
+         "Authorization": "Bearer {{AUTH_TOKEN}}"
+      }
+    }
+   }
+}
